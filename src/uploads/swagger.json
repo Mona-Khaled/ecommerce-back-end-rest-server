@@ -1,0 +1,56 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "E-Commerce API"
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/signup": {
+        "post": {
+          "description": "Sign up operation for normal user",
+          "summary": "sign up operation",
+          "parameters": [
+            {
+              "name": "firstName",
+              "in": "query",
+              "description": "user first name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "lastName",
+              "in": "query",
+              "description": "user last name",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "email",
+              "in": "query",
+              "description": "user email",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "password",
+              "in": "query",
+              "description": "user password",
+              "type": "string",
+              "required": true
+            }
+          ]
+        }
+      }
+    }
+  }
