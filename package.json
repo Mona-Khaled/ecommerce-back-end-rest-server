@@ -4,7 +4,11 @@
   "description": "This is backend of ecommerce project\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Donline fashcion ecommerce \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bion ecommerce app",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "ng": "ng",
+    "start": "node ./src/server.js",
+    "start:dev": "nodemon fileName.js",
+    "build": "ng build",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [
     "ecommerce",
@@ -33,5 +37,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
   }
 }
+
+
